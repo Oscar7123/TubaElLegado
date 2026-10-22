@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuba El Legado - Tuba Tradicional a Domicilio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A059',
+                            darkGold: '#9A7B38',
+                            vintageBg: '#F9F6F0',
+                            cardBg: '#FFFDF9',
+                            green: '#2D5A3A',
+                            brown: '#3D2817',
+                            clay: '#8C4827',
+                            accent: '#E07A5F'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .vintage-border {
+            border: 2px solid #C5A059;
+            box-shadow: inset 0 0 0 3px #F9F6F0, inset 0 0 0 5px #C5A059;
+        }
+        .hero-pattern {
+            background-color: #F9F6F0;
+            background-image: radial-gradient(#C5A059 0.75px, transparent 0.75px), radial-gradient(#C5A059 0.75px, #F9F6F0 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            background-opacity: 0.15;
+        }
+    </style>
+</head>
+<body class="bg-brand-vintageBg text-brand-brown font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-brand-vintageBg/95 backdrop-blur-md border-b border-brand-gold/30 shadow-sm">
+        <div class="max-w-6xl mx-mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-gold shadow-md flex-shrink-0">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23F5EFE6' stroke='%233D2817' stroke-width='3'/><circle cx='50' cy='50' r='42' fill='none' stroke='%23C5A059' stroke-width='1.5'/><text x='50' y='28' font-family='Cinzel, serif' font-size='8' font-weight='bold' text-anchor='middle' fill='%233D2817'>TUBA EL LEGADO</text><path d='M50 72 C 45 60, 45 45, 50 35 C 55 45, 55 60, 50 72' fill='%238C4827'/><path d='M50 40 Q 30 30 20 42 Q 35 45 50 40' fill='%232D5A3A'/><path d='M50 40 Q 70 30 80 42 Q 65 45 50 40' fill='%232D5A3A'/><path d='M50 38 Q 35 20 25 30 Q 38 35 50 38' fill='%232D5A3A'/><path d='M50 38 Q 65 20 75 30 Q 62 35 50 38' fill='%232D5A3A'/><text x='50' y='82' font-family='sans-serif' font-size='5' text-anchor='middle' fill='%233D2817'>Más de 30 años de historia</text></svg>" 
+                         alt="Logo Tuba El Legado" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h1 class="font-cinzel font-bold text-lg sm:text-xl text-brand-brown leading-tight">TUBA EL LEGADO</h1>
+                    <p class="text-xs font-playfair italic text-brand-clay font-medium">Más de 30 años de historia en cada gota</p>
+                </div>
+            </div>
+            
+            <a href="#pedido" class="hidden sm:inline-flex items-center gap-2 bg-brand-green hover:bg-emerald-800 text-white font-semibold px-5 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                <span>Hacer Pedido</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-12 md:py-20 hero-pattern overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-gold/15 border border-brand-gold/40 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-brand-brown">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i>
+                        <span>¡Servicio a domicilio en Colima y zonas participantes!</span>
+                    </div>
+                    
+                    <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-brown leading-tight">
+                        La Tuba Tradicional <br>
+                        <span class="text-brand-clay font-playfair italic font-normal">Directo a tu hogar</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-brand-brown/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Disfruta el auténtico sabor artesanal con la receta con más de 30 años de tradición. Fresca, refrescante y elaborada diariamente con la máxima higiene y devoción.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#pedido" class="w-full sm:w-auto text-center bg-brand-green hover:bg-emerald-800 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 group">
+                            <span>Pedir Tuba Ahora</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#sabores" class="w-full sm:w-auto text-center bg-white border border-brand-gold/50 hover:bg-brand-gold/10 text-brand-brown font-semibold px-6 py-4 rounded-xl transition-all">
+                            Conocer Sabores
+                        </a>
+                    </div>
+
+                    <!-- Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-brand-gold/20 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <span class="block font-cinzel font-bold text-xl text-brand-clay">$100 MXN</span>
+                            <span class="text-xs text-brand-brown/70">Litro de Tuba</span>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <span class="block font-cinzel font-bold text-xl text-brand-clay">$15 MXN</span>
+                            <span class="text-xs text-brand-brown/70">Envío Fijo</span>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <span class="block font-cinzel font-bold text-xl text-brand-clay">100%</span>
+                            <span class="text-xs text-brand-brown/70">Artesanal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Display Container -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <div class="absolute inset-0 bg-brand-gold/20 rounded-full blur-2xl transform scale-95"></div>
+                        <div class="relative w-full h-full rounded-full vintage-border p-3 bg-brand-cardBg shadow-2xl flex items-center justify-center">
+                            <!-- Integrated SVG SVG Replica based on uploaded image -->
+                            <svg viewBox="0 0 500 500" class="w-full h-full rounded-full">
+                                <!-- Background Texture Circle -->
+                                <circle cx="250" cy="250" r="240" fill="#EFE8DA" />
+                                <circle cx="250" cy="250" r="235" fill="none" stroke="#3D2817" stroke-width="6"/>
+                                <circle cx="250" cy="250" r="225" fill="none" stroke="#C5A059" stroke-width="2"/>
+                                <circle cx="250" cy="250" r="215" fill="none" stroke="#3D2817" stroke-dasharray="4,4" stroke-width="2"/>
+                                <circle cx="250" cy="250" r="185" fill="none" stroke="#3D2817" stroke-width="3"/>
+                                
+                                <!-- Laurels Left & Right -->
+                                <path d="M 120 220 Q 140 180 180 150 M 130 200 Q 150 170 190 145" fill="none" stroke="#C5A059" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M 380 220 Q 360 180 320 150 M 370 200 Q 350 170 310 145" fill="none" stroke="#C5A059" stroke-width="3" stroke-linecap="round"/>
+                                
+                                <!-- Top Text Curve -->
+                                <path id="textArcTop" d="M 80,250 A 170,170 0 0,1 420,250" fill="none"/>
+                                <text font-family="'Cinzel', serif" font-size="38" font-weight="bold" fill="#3D2817" letter-spacing="3">
+                                    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+                                        TUBA EL LEGADO
+                                    </textPath>
+                                </text>
+
+                                <!-- Bottom Text Curve -->
+                                <path id="textArcBottom" d="M 420,250 A 170,170 0 0,1 80,250" fill="none"/>
+                                <text font-family="'Playfair Display', serif" font-style="italic" font-size="25" fill="#3D2817">
+                                    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+                                        Más de 30 años de historia en cada gota
+                                    </textPath>
+                                </text>
+
+                                <!-- Central Palm Tree -->
+                                <g transform="translate(250, 260) scale(1.1)">
+                                    <!-- Trunk -->
+                                    <path d="M -8,80 C -12,40 -5,0 0,-70 C 5,0 8,40 8,80 Z" fill="#8C4827" stroke="#3D2817" stroke-width="2"/>
+                                    <!-- Trunk Rings -->
+                                    <line x1="-7" y1="60" x2="7" y2="60" stroke="#3D2817" stroke-width="1.5"/>
+                                    <line x1="-6" y1="40" x2="6" y2="40" stroke="#3D2817" stroke-width="1.5"/>
+                                    <line x1="-5" y1="20" x2="5" y2="20" stroke="#3D2817" stroke-width="1.5"/>
+                                    <line x1="-4" y1="0" x2="4" y2="0" stroke="#3D2817" stroke-width="1.5"/>
+                                    <line x1="-3" y1="-20" x2="3" y2="-20" stroke="#3D2817" stroke-width="1.5"/>
+                                    <line x1="-2" y1="-40" x2="2" y2="-40" stroke="#3D2817" stroke-width="1.5"/>
+
+                                    <!-- Coconuts -->
+                                    <circle cx="-10" cy="-65" r="8" fill="#5C3A21" stroke="#3D2817"/>
+                                    <circle cx="10" cy="-65" r="8" fill="#5C3A21" stroke="#3D2817"/>
+                                    <circle cx="0" cy="-60" r="9" fill="#422917" stroke="#3D2817"/>
+
+                                    <!-- Palm Fronds -->
+                                    <!-- Left main -->
+                                    <path d="M 0,-70 Q -60,-80 -100,-40 Q -50,-30 0,-70" fill="#2D5A3A" stroke="#1E3D27" stroke-width="1.5"/>
+                                    <path d="M 0,-70 Q -70,-50 -110,-10 Q -55,-10 0,-70" fill="#244B30" stroke="#1E3D27" stroke-width="1.5"/>
+                                    <path d="M 0,-70 Q -80,-20 -90,30 Q -50,10 0,-70" fill="#2D5A3A" stroke="#1E3D27" stroke-width="1.5"/>
+                                    
+                                    <!-- Right main -->
+                                    <path d="M 0,-70 Q 60,-80 100,-40 Q 50,-30 0,-70" fill="#2D5A3A" stroke="#1E3D27" stroke-width="1.5"/>
+                                    <path d="M 0,-70 Q 70,-50 110,-10 Q 55,-10 0,-70" fill="#244B30" stroke="#1E3D27" stroke-width="1.5"/>
+                                    <path d="M 0,-70 Q 80,-20 90,30 Q 50,10 0,-70" fill="#2D5A3A" stroke="#1E3D27" stroke-width="1.5"/>
+
+                                    <!-- Top fronds -->
+                                    <path d="M 0,-70 Q -30,-110 -50,-120 Q -20,-80 0,-70" fill="#386E48" stroke="#1E3D27" stroke-width="1.5"/>
+                                    <path d="M 0,-70 Q 30,-110 50,-120 Q 20,-80 0,-70" fill="#386E48" stroke="#1E3D27" stroke-width="1.5"/>
+                                    <path d="M 0,-70 Q 0,-120 0,-130 Q 10,-90 0,-70" fill="#2D5A3A" stroke="#1E3D27" stroke-width="1.5"/>
+                                </g>
+
+                                <!-- Bottom Leaf Wreath Arc -->
+                                <path d="M 120 330 Q 250 420 380 330" fill="none" stroke="#C5A059" stroke-width="3" stroke-dasharray="6,4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="py-12 bg-brand-vintageBg border-t border-brand-gold/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-brand-gold/40 shadow-lg inline-block max-w-md w-full">
+                <span class="text-brand-clay font-semibold text-xs uppercase tracking-widest bg-brand-gold/10 px-3 py-1 rounded-full">Acceso Rápido</span>
+                <h3 class="font-cinzel text-2xl font-bold text-brand-brown mt-3">Escanea el Código QR</h3>
+                <p class="text-xs text-brand-brown/70 mt-1 mb-6">Escanea desde tu celular para entrar a esta página y hacer tu pedido fácilmente o compartirla con tus amigos.</p>
+                
+                <div class="flex justify-center mb-4">
+                    <div class="p-4 bg-white rounded-2xl border-2 border-brand-gold/30 shadow-md inline-block">
+                        <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://tuba-el-legado.com" alt="Código QR Tuba El Legado" class="w-48 h-48 object-contain">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center gap-2 text-xs text-brand-brown/80 font-medium">
+                    <i data-lucide="qr-code" class="w-4 h-4 text-brand-gold"></i>
+                    <span>Tuba El Legado • Pedidos a Domicilio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu / Variety Section -->
+    <section id="sabores" class="py-16 bg-white border-y border-brand-gold/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-clay font-semibold text-sm uppercase tracking-wider">Nuestra Especialidad</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-brand-brown mt-1">Nuestra Tuba Tradicional</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tuba Natural -->
+                <div class="bg-brand-vintageBg rounded-2xl p-6 sm:p-8 border border-brand-gold/30 hover:border-brand-gold transition-all shadow-sm hover:shadow-md relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="inline-block bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full mb-2">Clásica & Pura</span>
+                                <h3 class="font-cinzel text-2xl font-bold text-brand-brown">Tuba Natural</h3>
+                            </div>
+                            <span class="font-cinzel font-bold text-2xl text-brand-clay">$100 <span class="text-xs font-sans text-brand-brown/70 font-normal">/ Litro</span></span>
+                        </div>
+                        <p class="text-brand-brown/80 text-sm leading-relaxed mb-6">
+                            Obtenida directamente de la savia de la palma de coco. Una bebida refrescante, dulce por naturaleza, con notas frutales únicas e ideal para disfrutar bien fría a cualquier hora del día.
+                        </p>
+                    </div>
+                    <div class="border-t border-brand-gold/20 pt-4 flex items-center justify-between text-xs text-brand-brown/70">
+                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> 100% Orgánica</span>
+                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> Recién cosechada</span>
+                    </div>
+                </div>
+
+                <!-- Tuba Compuesta -->
+                <div class="bg-brand-vintageBg rounded-2xl p-6 sm:p-8 border border-brand-gold/30 hover:border-brand-gold transition-all shadow-sm hover:shadow-md relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="inline-block bg-red-100 text-red-900 text-xs font-bold px-3 py-1 rounded-full mb-2">La Favorita de la Casa</span>
+                                <h3 class="font-cinzel text-2xl font-bold text-brand-brown">Tuba Compuesta</h3>
+                            </div>
+                            <span class="font-cinzel font-bold text-2xl text-brand-clay">$100 <span class="text-xs font-sans text-brand-brown/70 font-normal">/ Litro</span></span>
+                        </div>
+                        <p class="text-brand-brown/80 text-sm leading-relaxed mb-6">
+                            Preparada con la receta tradicional de la familia: acompañada con trocitos de manzana fresca, cacahuate tostado crujiente y nuestro toque especial que realza su delicioso sabor.
+                        </p>
+                    </div>
+                    <div class="border-t border-brand-gold/20 pt-4 flex items-center justify-between text-xs text-brand-brown/70">
+                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> Con Manzana y Cacahuate</span>
+                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> Toque Especial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Order Section -->
+    <section id="pedido" class="py-16 lg:py-24 hero-pattern">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-gold/40 p-6 sm:p-10 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <span class="text-brand-clay font-semibold text-xs uppercase tracking-widest bg-brand-gold/10 px-3 py-1 rounded-full">Calcula y Pide en Línea</span>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-brand-brown mt-2">Haz tu Pedido a Domicilio</h2>
+                    <p class="text-sm text-brand-brown/70 mt-1">Completa los litros que deseas y enviamos tu solicitud directa a WhatsApp.</p>
+                </div>
+
+                <form id="orderForm" onsubmit="sendWhatsAppOrder(event)" class="space-y-8">
+                    <!-- Flavor Selection Controls -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- Tuba Natural Counter -->
+                        <div class="bg-brand-vintageBg p-5 rounded-2xl border border-brand-gold/30">
+                            <div class="flex justify-between items-center mb-3">
+                                <div>
+                                    <h4 class="font-cinzel font-bold text-lg text-brand-brown">Tuba Natural</h4>
+                                    <p class="text-xs text-brand-brown/60">$100 MXN / Litro</p>
+                                </div>
+                                <span class="text-xs font-bold bg-brand-gold/20 text-brand-brown px-2.5 py-1 rounded-lg">Natural</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-white p-2 rounded-xl border border-gray-200">
+                                <button type="button" onclick="updateLitros('natural', -1)" class="w-10 h-10 rounded-lg bg-gray-100 hover:bg-brand-gold/20 flex items-center justify-center font-bold text-lg text-brand-brown transition-colors">
+                                    -
+                                </button>
+                                <div class="text-center">
+                                    <span id="qtyNatural" class="font-bold text-xl text-brand-brown">0</span>
+                                    <span class="text-xs text-gray-500 block">Litros</span>
+                                </div>
+                                <button type="button" onclick="updateLitros('natural', 1)" class="w-10 h-10 rounded-lg bg-brand-gold text-white hover:bg-brand-darkGold flex items-center justify-center font-bold text-lg transition-colors">
+                                    +
+                                </button>
+                            </div>
+                            <div class="mt-2 text-right">
+                                <span class="text-xs text-brand-brown/70">Subtotal: </span>
+                                <span id="subtotalNatural" class="font-bold text-brand-clay text-sm">$0 MXN</span>
+                            </div>
+                        </div>
+
+                        <!-- Tuba Compuesta Counter -->
+                        <div class="bg-brand-vintageBg p-5 rounded-2xl border border-brand-gold/30">
+                            <div class="flex justify-between items-center mb-3">
+                                <div>
+                                    <h4 class="font-cinzel font-bold text-lg text-brand-brown">Tuba Compuesta</h4>
+                                    <p class="text-xs text-brand-brown/60">$100 MXN / Litro</p>
+                                </div>
+                                <span class="text-xs font-bold bg-brand-clay/20 text-brand-clay px-2.5 py-1 rounded-lg">Con Fruta</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-white p-2 rounded-xl border border-gray-200">
+                                <button type="button" onclick="updateLitros('compuesta', -1)" class="w-10 h-10 rounded-lg bg-gray-100 hover:bg-brand-gold/20 flex items-center justify-center font-bold text-lg text-brand-brown transition-colors">
+                                    -
+                                </button>
+                                <div class="text-center">
+                                    <span id="qtyCompuesta" class="font-bold text-xl text-brand-brown">0</span>
+                                    <span class="text-xs text-gray-500 block">Litros</span>
+                                </div>
+                                <button type="button" onclick="updateLitros('compuesta', 1)" class="w-10 h-10 rounded-lg bg-brand-gold text-white hover:bg-brand-darkGold flex items-center justify-center font-bold text-lg transition-colors">
+                                    +
+                                </button>
+                            </div>
+                            <div class="mt-2 text-right">
+                                <span class="text-xs text-brand-brown/70">Subtotal: </span>
+                                <span id="subtotalCompuesta" class="font-bold text-brand-clay text-sm">$0 MXN</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Delivery Details -->
+                    <div class="space-y-4 pt-2 border-t border-gray-100">
+                        <h4 class="font-cinzel font-bold text-base text-brand-brown">Datos de Entrega</h4>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-brand-brown/80 mb-1">Nombre Completo *</label>
+                                <input type="text" id="clientName" required placeholder="Ej. Juan Pérez" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-brand-brown/80 mb-1">Colonia y Calle *</label>
+                                <input type="text" id="clientAddress" required placeholder="Ej. Av. Hidalgo #123, Col. Centro" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-brand-brown/80 mb-1">Instrucciones o Referencias (Opcional)</label>
+                            <input type="text" id="clientNotes" placeholder="Ej. Fachada color azul, entre calles..." class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Order Summary Box -->
+                    <div class="bg-brand-brown text-white p-6 rounded-2xl space-y-3">
+                        <div class="flex justify-between text-sm text-amber-100/80">
+                            <span>Subtotal Producto:</span>
+                            <span id="summarySubtotal">$0 MXN</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-amber-100/80">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="truck" class="w-4 h-4 text-brand-gold"></i> Envío a domicilio:
+                            </span>
+                            <span>$15 MXN</span>
+                        </div>
+                        <div class="border-t border-amber-200/20 pt-3 flex justify-between items-center">
+                            <span class="font-cinzel text-lg font-bold text-white">TOTAL ESTIMADO:</span>
+                            <span id="summaryTotal" class="font-cinzel text-2xl font-bold text-brand-gold">$15 MXN</span>
+                        </div>
+                    </div>
+
+                    <!-- Error Notice if no items -->
+                    <div id="errorMsg" class="hidden bg-red-50 text-red-700 text-xs p-3 rounded-xl border border-red-200 text-center font-medium">
+                        Por favor selecciona al menos 1 litro de Tuba (Natural o Compuesta) para continuar.
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 text-base">
+                        <i data-lucide="message-square" class="w-5 h-5"></i>
+                        <span>Enviar Pedido por WhatsApp</span>
+                    </button>
+                    
+                    <p class="text-center text-xs text-brand-brown/60">
+                        Al dar clic se abrirá tu aplicación de WhatsApp con el resumen de tu pedido pre-llenado.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section / History -->
+    <section class="py-16 bg-white border-t border-brand-gold/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <span class="text-brand-clay font-semibold text-xs uppercase tracking-wider">Tradición Familiar</span>
+                    <h2 class="font-cinzel text-3xl font-bold text-brand-brown">Más de 30 Años Conservando el Sabor Auténtico</h2>
+                    <p class="text-brand-brown/80 text-sm leading-relaxed">
+                        En <strong>Tuba El Legado</strong> nos enorgullece mantener viva una de las tradiciones más queridas de nuestra región. Durante más de tres décadas hemos perfeccionado el arte del raspado de la palma y la preparación artesanal de la tuba.
+                    </p>
+                    <p class="text-brand-brown/80 text-sm leading-relaxed">
+                        Cada gota que servimos lleva consigo pasión, historia y el firme compromiso de ofrecerte un producto higiénico, fresco y delicioso directo hasta las puertas de tu hogar.
+                    </p>
+
+                    <div class="pt-4 flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-brand-green"></i>
+                            <span class="text-xs font-semibold text-brand-brown">Calidad Garantizada</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="heart" class="w-5 h-5 text-brand-clay"></i>
+                            <span class="text-xs font-semibold text-brand-brown">Receta Familiar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-vintageBg p-8 rounded-2xl border-2 border-brand-gold/30 text-center space-y-4">
+                    <i data-lucide="phone-call" class="w-10 h-10 text-brand-gold mx-auto"></i>
+                    <h3 class="font-cinzel font-bold text-xl text-brand-brown">¿Prefieres llamar por teléfono?</h3>
+                    <p class="text-xs text-brand-brown/70">Estamos disponibles para atender tus pedidos especiales, eventos o dudas directamente.</p>
+                    <a href="tel:3121353582" class="inline-block font-cinzel font-bold text-2xl text-brand-clay hover:text-brand-brown transition-colors">
+                        312 135 3582
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-brown text-amber-100 py-10 border-t-4 border-brand-gold">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="flex justify-center items-center gap-2">
+                <span class="font-cinzel font-bold text-lg text-white">TUBA EL LEGADO</span>
+            </div>
+            <p class="text-xs text-amber-100/70 max-w-md mx-auto">
+                La tuba más fresca y tradicional con entrega a domicilio. Más de 30 años respaldan nuestro sabor.
+            </p>
+            <div class="text-xs text-amber-100/50 pt-4 border-t border-amber-100/10">
+                &copy; <span id="year"></span> Tuba El Legado. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Update QR code with current page URL dynamically if available
+        if (window.location.href && window.location.href.startsWith('http')) {
+            document.getElementById('qrImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(window.location.href)}`;
+        }
+
+        // Logic & State Management
+        const PRICE_PER_LITER = 100;
+        const SHIPPING_COST = 15;
+        const PHONE_NUMBER = "523121353582"; // Number format for WhatsApp API: 3121353582 with Mexico country code
+
+        let state = {
+            naturalQty: 0,
+            compuestaQty: 0
+        };
+
+        function updateLitros(type, change) {
+            if (type === 'natural') {
+                state.naturalQty = Math.max(0, state.naturalQty + change);
+                document.getElementById('qtyNatural').textContent = state.naturalQty;
+                document.getElementById('subtotalNatural').textContent = `$${state.naturalQty * PRICE_PER_LITER} MXN`;
+            } else if (type === 'compuesta') {
+                state.compuestaQty = Math.max(0, state.compuestaQty + change);
+                document.getElementById('qtyCompuesta').textContent = state.compuestaQty;
+                document.getElementById('subtotalCompuesta').textContent = `$${state.compuestaQty * PRICE_PER_LITER} MXN`;
+            }
+
+            calculateTotals();
+        }
+
+        function calculateTotals() {
+            const totalLitros = state.naturalQty + state.compuestaQty;
+            const subtotal = totalLitros * PRICE_PER_LITER;
+            
+            // If user has chosen products, add shipping cost
+            const total = totalLitros > 0 ? subtotal + SHIPPING_COST : SHIPPING_COST;
+
+            document.getElementById('summarySubtotal').textContent = `$${subtotal} MXN`;
+            document.getElementById('summaryTotal').textContent = `$${total} MXN`;
+
+            // Hide error message if at least 1 item is selected
+            if (totalLitros > 0) {
+                document.getElementById('errorMsg').classList.add('hidden');
+            }
+        }
+
+        function sendWhatsAppOrder(e) {
+            e.preventDefault();
+
+            const totalLitros = state.naturalQty + state.compuestaQty;
+            const errorMsg = document.getElementById('errorMsg');
+
+            if (totalLitros <= 0) {
+                errorMsg.classList.remove('hidden');
+                return;
+            }
+
+            errorMsg.classList.add('hidden');
+
+            const name = document.getElementById('clientName').value.trim();
+            const address = document.getElementById('clientAddress').value.trim();
+            const notes = document.getElementById('clientNotes').value.trim();
+
+            const subtotal = totalLitros * PRICE_PER_LITER;
+            const total = subtotal + SHIPPING_COST;
+
+            // Formulating formatted WhatsApp Message
+            let message = `🌴 *NUEVO PEDIDO - TUBA EL LEGADO* 🌴\n\n`;
+            message += `👤 *Cliente:* ${name}\n`;
+            message += `📍 *Dirección:* ${address}\n`;
+            if (notes) {
+                message += `📝 *Referencias:* ${notes}\n`;
+            }
+            message += `\n--- *DETALLE DEL PEDIDO* ---\n`;
+
+            if (state.naturalQty > 0) {
+                message += `• Tuba Natural: ${state.naturalQty} L ($${state.naturalQty * PRICE_PER_LITER} MXN)\n`;
+            }
+            if (state.compuestaQty > 0) {
+                message += `• Tuba Compuesta: ${state.compuestaQty} L ($${state.compuestaQty * PRICE_PER_LITER} MXN)\n`;
+            }
+
+            message += `\n💵 *Subtotal:* $${subtotal} MXN\n`;
+            message += `🛵 *Envío a domicilio:* $${SHIPPING_COST} MXN\n`;
+            message += `💰 *TOTAL A PAGAR:* $${total} MXN\n\n`;
+            message += `¡Quedo a la espera de la confirmación de mi pedido! Gracias.`;
+
+            // Encode string for URL
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodedMessage}`;
+
+            // Open WhatsApp in new window/app
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
